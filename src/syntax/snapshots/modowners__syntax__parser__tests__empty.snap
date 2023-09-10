@@ -1,0 +1,6 @@
+---
+source: src/syntax/parser.rs
+expression: node
+---
+ROOT@0..0
+

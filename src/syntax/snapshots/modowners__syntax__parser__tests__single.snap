@@ -1,0 +1,13 @@
+---
+source: src/syntax/parser.rs
+expression: node
+---
+ROOT@0..10
+  ENTRY@0..10
+    PATTERN@0..1
+      TOKEN@0..1 "*"
+    OWNER@1..9
+      WHITESPACE@1..2 " "
+      TOKEN@2..9 "@ferris"
+    NEWLINE@9..10 "\n"
+

@@ -1,0 +1,15 @@
+---
+source: src/syntax/parser.rs
+expression: node
+---
+ROOT@0..66
+  ENTRY@0..66
+    COMMENT@0..37 "# This comments belon ..."
+    COMMENT@37..56 "# so does this one\n"
+    PATTERN@56..57
+      TOKEN@56..57 "*"
+    OWNER@57..65
+      WHITESPACE@57..58 " "
+      TOKEN@58..65 "@ferris"
+    NEWLINE@65..66 "\n"
+

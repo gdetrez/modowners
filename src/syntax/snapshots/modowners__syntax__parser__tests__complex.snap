@@ -1,0 +1,38 @@
+---
+source: src/syntax/parser.rs
+expression: node
+---
+ROOT@0..125
+  COMMENT@0..20 "# Here's a comment!\n"
+  NEWLINE@20..21 "\n"
+  ENTRY@21..40
+    PATTERN@21..22
+      TOKEN@21..22 "*"
+    OWNER@22..30
+      WHITESPACE@22..23 " "
+      TOKEN@23..30 "@ferris"
+    OWNER@30..39
+      WHITESPACE@30..31 " "
+      TOKEN@31..39 "@octocat"
+    NEWLINE@39..40 "\n"
+  NEWLINE@40..41 "\n"
+  COMMENT@41..65 "# Multiple blank lines!\n"
+  NEWLINE@65..66 "\n"
+  NEWLINE@66..67 "\n"
+  ENTRY@67..87
+    PATTERN@67..77
+      TOKEN@67..77 "/some/path"
+    OWNER@77..86
+      WHITESPACE@77..78 " "
+      TOKEN@78..86 "@octocat"
+    NEWLINE@86..87 "\n"
+  ENTRY@87..115
+    PATTERN@87..105
+      TOKEN@87..105 "some/other/path/**"
+    OWNER@105..114
+      WHITESPACE@105..106 " "
+      TOKEN@106..114 "@octocat"
+    NEWLINE@114..115 "\n"
+  NEWLINE@115..116 "\n"
+  COMMENT@116..125 "# The End"
+

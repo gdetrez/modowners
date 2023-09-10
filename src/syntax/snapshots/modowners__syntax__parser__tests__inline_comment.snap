@@ -1,0 +1,21 @@
+---
+source: src/syntax/parser.rs
+expression: node
+---
+ROOT@0..31
+  ENTRY@0..24
+    PATTERN@0..1
+      TOKEN@0..1 "*"
+    OWNER@1..6
+      WHITESPACE@1..2 " "
+      TOKEN@2..6 "@foo"
+    WHITESPACE@6..7 " "
+    COMMENT@7..24 "# inline comment\n"
+  ENTRY@24..31
+    PATTERN@24..25
+      TOKEN@24..25 "*"
+    OWNER@25..30
+      WHITESPACE@25..26 " "
+      TOKEN@26..30 "@bar"
+    NEWLINE@30..31 "\n"
+
